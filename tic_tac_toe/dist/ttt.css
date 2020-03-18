@@ -1,0 +1,64 @@
+ul {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  list-style: none;
+  margin: 30px auto;
+}
+
+li {
+  background-color: gray;
+  width: 90px;
+  height: 90px;
+  border: 5px solid red;
+  box-sizing: border-box;
+}
+
+li:hover {
+  background-color: blue;
+}
+
+.x,
+.o {
+  background-color: white;
+  cursor: default;
+}
+
+.x:after,
+.o:after {
+  font-size: 60px;
+  display: block;
+  line-height: 80px;
+  width: 100%;
+}
+
+.x:after {
+  content: "x";
+}
+
+.o:after {
+  content: "o";
+}
+
+.game-over li {
+  color: purple;
+  cursor: default;
+  background-color: white;
+}
+
+.winner-x .x,
+.winner-o .o {
+  background-color: black;
+  color: yellow;
+}
+
+figcaption {
+  color: black;
+  font-size: 30px;
+}
+
+body {
+  /* display: flex; */
+  text-align: center;
+}
